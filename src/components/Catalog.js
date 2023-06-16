@@ -50,51 +50,46 @@ function Catalog() {
     };
 
     return (
-      
-            <div className='container'>
-                <Helmet>
-                    <title>Maybelline</title>
-                </Helmet>
-                <div className='sort-div'>
-                    <button className='sort' onClick={sortBy === 'price' ? sortByName : sortByPrice}>
-                        {sortBy === 'price' ? 'Sort by Name' : 'Sort by Price'}
-                    </button>
-                    <Link to="/new">
-                            <button type="submit" className="addPrd" value="Add Product">Add Product</button>
-                        </Link>
-                </div>
-                <section className='child' id='catalog'>
+        <div className='container'>
+            <Helmet>
+                <title>Maybelline</title>
+            </Helmet>
+            <div className='sort-div'>
+                <button className='sort' onClick={sortBy === 'price' ? sortByName : sortByPrice}>
+                    {sortBy === 'price' ? 'Sort by Name' : 'Sort by Price'}
+                </button>
+                <Link to="/new">
+                    <button type="submit" className="addPrd" value="Add Product">Add Product</button>
+                </Link>
+            </div>
+            <section className='child' id='catalog'>
                 {console.log(displayProduct)}
-
-                    {displayProduct.map((product) => (
-                        <div
-                            key={product.dealId}
-                            className='movie-item'
-                            onClick={() => productOnClick(product.id)}
+                {displayProduct.map((product) => (
+                    <div
+                        key={product.dealId}
+                        className='movie-item'
+                        onClick={() => productOnClick(product.id)}
+                    >
+                        <Link
+                            to={{
+                                pathname: `/product/${encodeURIComponent(product.id)}`,
+                            }}
                         >
-                            <Link
-                                to={{
-                                    pathname: `/product/${encodeURIComponent(product.id)}`,
-                                }}
-                            >
-                                <div className='figure'>
+                            <div className='figure'>
                                 <figure>
                                     <img src={product.image_link} alt={product.title} />
-
-                               
-                               
                                 </figure>
                                 <div className='img-name'>
                                     <div className='left'><p>  {product.name}</p></div>
                                     <div className='right'><p> ${product.price}</p></div>
                                 </div>
-                                </div>
-                            </Link>
+                            </div>
+                        </Link>
 
-                        </div>
-                    ))}
-                </section>
-            </div>
+                    </div>
+                ))}
+            </section>
+        </div>
     );
 }
 

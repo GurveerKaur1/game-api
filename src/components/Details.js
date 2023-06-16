@@ -42,8 +42,6 @@ function Details() {
                     </figure>
                 </div>
                 <div className="column-2">
-
-
                     <p className='name'> {product.name}</p>
                     <ul className='ul'>
                         <li>
@@ -55,9 +53,6 @@ function Details() {
                         <p> {product.description}</p>
                     </div>
                     <button className='buy'>Buy Now</button>
-
-
-                    {/* Add other details you want to display */}
                 </div>
             </div>
         </div>

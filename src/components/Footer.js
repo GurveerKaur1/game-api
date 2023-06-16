@@ -5,7 +5,6 @@ function Footer() {
                 <div class="tags">
                     <h3> &copy;Maybelline</h3>
                 </div>
-
             </div>
         </footer>
     )

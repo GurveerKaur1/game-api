@@ -9,7 +9,6 @@ function Header(){
                         <li class="six"><a href="#">About Us</a></li>
                         <li class="home-2"><a href="about.html">Contact us</a></li>
                         <li class="home-3"><a href="#">Details</a></li>
-                     
                     </ul>
                 </nav>
             </div>
