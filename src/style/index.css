@@ -272,6 +272,10 @@ form button:disabled{
     cursor: not-allowed;
 }
 
+form button:hover{
+    background-color: #008080;
+}
+
 .cross-flex{
     display: flex;
 }
@@ -385,4 +389,35 @@ form button:disabled{
     display: inline;
     line-height: 60px;
     cursor: default;
+}
+
+.contents{
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFound {
+    height: calc(100vh - 110px);
+    background: #fff url("") center center / cover no-repeat;
+    display: grid;
+    place-items: center;
+}
+
+
+.content {
+    text-align: center;
+}
+
+.notfound-message {
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+h2{
+    color: #FF7F50;
+}
+
+.returnBtn{
+    margin-left: 20px;
 }

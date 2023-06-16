@@ -6,6 +6,7 @@ import Details from './components/Details';
 import Header from './components/Header';
 import New from './components/New';
 import Footer from './components/Footer';
+import NotFound from './components/NotFound';
 function App() {
   return (
     <div>
@@ -14,6 +15,7 @@ function App() {
       <Route path = "/game-api" element={<Catalog/>}></Route>
       <Route path="/product/:selectedProduct" element={<Details />} />
       <Route path="/new" element={<New/>}></Route>
+      {/* <Route path="*" element={<NotFound />} /> */}
      </Routes>
      <Footer/>
     </div>
