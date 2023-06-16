@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/game-api/static/css/main.caa86640.css",
-    "main.js": "/game-api/static/js/main.d7028aa1.js",
+    "main.js": "/game-api/static/js/main.191cf30a.js",
     "index.html": "/game-api/index.html",
     "main.caa86640.css.map": "/game-api/static/css/main.caa86640.css.map",
-    "main.d7028aa1.js.map": "/game-api/static/js/main.d7028aa1.js.map"
+    "main.191cf30a.js.map": "/game-api/static/js/main.191cf30a.js.map"
   },
   "entrypoints": [
     "static/css/main.caa86640.css",
-    "static/js/main.d7028aa1.js"
+    "static/js/main.191cf30a.js"
   ]
 }
